@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"log"
 
@@ -14,9 +15,11 @@ var (
 )
 
 func main() {
+	url := *flag.String("url", "rtsp://admin:admin@192.168.2.161", "RTSP URL string")
+	flag.Parse()
+
 	go StartHTTPServer()
 	// url := "rtsp://admin:123456@171.25.232.42:1554/mpeg4cif"
-	url := "rtsp://admin:admin@192.168.2.161"
 	sps := []byte{}
 	pps := []byte{}
 	fuBuffer := []byte{}

@@ -1,11 +1,14 @@
 #
-# Makefile for gstreamer 1.0
+# Makefile for RTSPtoWebRTC
 #
 usage:
 	@echo "make [build|git]"
 
 build b:
 	go build
+
+run r:
+	./RTSPtoWebRTC -h
 #-----------------------------------------------------------------------------------------
 git g:
 	@echo "make (git) [update|login|tag|status]"

@@ -1,7 +1,7 @@
 # RTSPtoWebRTC
 
 ## Changes
-- 2019/05/08: update sources and go.mod for pion2
+- 2019/05/08: update sources and `go.mod` for pion2
 - 2018/05/08: fork from [deepch/RTSPtoWebRTC](https://github.com/deepch/RTSPtoWebRTC)
 
 ## Notice

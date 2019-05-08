@@ -2,7 +2,10 @@
 # Makefile for RTSPtoWebRTC
 #
 usage:
-	@echo "make [build|git]"
+	@echo "make [edit|build|run|git]"
+
+edit e:
+	vi main.go
 
 build b:
 	go build
